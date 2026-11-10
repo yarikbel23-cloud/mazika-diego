@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модный Магазин Одежды</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="logo">MAZIK STORE</div>
+        <nav class="nav">
+            <a href="#">Главная</a>
+            <a href="#products">Каталог</a>
+            <a href="#">Контакты</a>
+        </nav>
+        <div class="cart-icon" id="cartBtn">
+            🛒 Корзина (<span id="cartCount">0</span>)
+        </div>
+    </header>
+
+    <!-- Баннер -->
+    <section class="banner">
+        <div class="banner-text">
+            <h1>Новая коллекция 2026</h1>
+            <p>Стильная одежда по отличным ценам</p>
+        </div>
+    </section>
+
+    <!-- Основной контент -->
+    <main class="container">
+        <h2>Каталог товаров</h2>
+        <div class="products-grid" id="productsGrid">
+            <!-- Товары загружаются из sript.js -->
+        </div>
+    </main>
+
+    <!-- Модальное окно корзины -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeCart">&times;</span>
+            <h2>Ваша корзина</h2>
+            <div id="cartItems"></div>
+            <div class="cart-total">
+                <strong>Итого: <span id="cartTotal">0</span> ₽</strong>
+            </div>
+            <button class="btn btn-checkout" onclick="alert('Заказ оформлен!')">Оформить заказ</button>
+        </div>
+    </div>
+
+    <script src="js/sript.js"></script>
+</body>
+</html>
